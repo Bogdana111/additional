@@ -466,3 +466,61 @@
 // console.log(calculateTax(100));
 
 // **********************************************************
+
+// function getProductPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   for (let product of products) {
+//     if (product.name === productName) {
+//       return product.price;
+//     }
+//     null;
+//   }
+//   return;
+// }
+// console.log(getProductPrice("Grip"));
+
+// ****************************************************************************************************
+// function calculateTotalPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   let totalPrice = 0;
+//   for (const product of products) {
+//     if (productName === product.name) {
+//       return (totalPrice = product.price * product.quantity);
+//     }
+//   }
+//   return `Product ${productName} not found!`;
+// }
+
+// console.log(calculateTotalPrice("Grgtrgtip"));
+//
+
+// ****************************************************************************************
+// const atTheOldToad = {
+//   points: [],
+//   getPoints() {
+//     return "List of all available potions";
+//   },
+//   addPotion(potionName) {
+//     return `Adding ${potionName}`;
+//   },
+// };
+
+// **************************************************
+function getExtremeScores(scores) {
+  let obj = {};
+
+  obj.best = Math.max(...scores);
+  obj.worst = Math.min(...scores);
+  return obj;
+}
+console.log(getExtremeScores([19, 7, 4, 17, 81, 24]));
