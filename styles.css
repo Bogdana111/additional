@@ -321,221 +321,24 @@ ul {
     display: none;
   }
 }
-/* Desktop */
-.section-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.contacts-list {
-  display: flex;
-}
-.contacts-list .contacts-item:not(:last-child) {
-  margin-right: 40px;
-}
-.contacts-mail,
-.contacts-tel {
-  padding: 24px 0;
-  font-size: 16px;
-}
-.contacts-mail {
-  margin-bottom: 0;
-}
-.hero-section {
-  max-width: 1440px;
-  height: 600px;
-  padding: 188px 0;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-}
-@media screen and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/people-office-2x.jpg");
-  }
-}
-.hero-title {
-  margin: 0 auto 48px;
-}
-.feature-section {
-  padding: 120px 0;
-}
-.container {
-  width: 1158px;
-}
-.feature-list {
-  gap: 24px;
-}
-.feature-item {
-  width: 264px;
-}
-.feature-icon-container {
-  display: flex;
-  margin-bottom: 8px;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-
-  background-color: var(--light-brand);
-}
-.picture-section {
-  padding-bottom: 120px;
-}
-.picture-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-}
-.team-section {
-  padding: 120px 0;
-}
-.team-list {
-  gap: 24px;
-  width: 100%;
-  justify-content: center;
-}
-.section-customers {
-  padding: 120px 0;
-}
-.customers-list {
-  width: 100%;
-  gap: 24px;
-}
-.footer {
-  background-color: var(--primary-color);
-  padding: 100px 0;
-}
-.footer-container {
-  display: flex;
-}
-.footer-wrap {
-  width: 592px;
-  margin-left: 0;
-  display: flex;
-  gap: 120px;
-  margin-right: 80px;
-  margin-left: auto;
-}
-.footer-social-container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
-}
-.footer-title {
-  color: var(--white-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-}
-.footer-list {
-  display: flex;
-  gap: 16px;
-}
-.footer-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition-property: background;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-link:hover,
-.footer-link:focus {
-  background-color: var(--success);
-}
-.footer-form-container {
-  width: 454px;
-  margin-left: 0;
-  margin-right: auto;
-}
-.footer-form {
-  display: flex;
-  align-items: center;
-}
-.footer-input {
-  margin-right: 24px;
-  padding-left: 16px;
-
-  width: 264px;
-  height: 40px;
-
-  color: var(--white-color);
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: transparent;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-.footer-input::placeholder {
-  font-family: "Roboto";
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-btn {
-  display: flex;
-  align-items: center;
-  padding: 8px 24px;
+.hero-button {
+  padding: 16px 32px;
+  margin: 20px auto;
 
   color: var(--white-color);
   background-color: var(--primary-brand);
-  border-color: var(--primary-brand);
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  transition-property: background, border;
-  transition-duration: 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
-    cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-btn:hover,
-.footer-btn:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-.footer-icon {
-  margin-left: 16px;
-}
-.portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-.list.buttons {
-  margin-bottom: 72px;
-}
-.portfolio-list {
-  gap: 48px 24px;
 }
